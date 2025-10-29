@@ -31,6 +31,7 @@ public class baseTest {
 	public ExtentReports extent;
 	public ExtentTest logger;
 	public static WebDriver driver;
+	public static String browser="chrome";
 
 	@BeforeTest
 	public void beforeTestMethod() {
@@ -46,8 +47,7 @@ public class baseTest {
 	}
 
 	@BeforeMethod
-	@Parameters("browser")
-	public void beforeMethodMethod(String browser,Method testMethod) {
+	public void beforeMethodMethod(Method testMethod) {
          logger = extent.createTest(testMethod.getName());
          setupDriver(browser);
          driver.get(Contants.url);
