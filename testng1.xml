@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="GridSuite" parallel="tests" thread-count="2">
+
+    <!-- Chrome execution -->
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="qa.test.processRun">
+                <methods>
+                    <include name="goToAmazonWithChrome"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Safari execution -->
+    <test name="SafariTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="qa.test.processRun">
+                <methods>
+                    <include name="goToAmazonWithSafari"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
