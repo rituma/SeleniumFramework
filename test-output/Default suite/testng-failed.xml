@@ -6,9 +6,10 @@
       <class name="qa.test.processRun">
         <methods>
           <include name="beforeMethodMethod"/>
+          <include name="goToAmazonWithChrome"/>
           <include name="beforeTestMethod"/>
           <include name="afterMethod"/>
-          <include name="goToAmazon"/>
+          <include name="goToAmazonWithSafari"/>
           <include name="afterTestMethod"/>
         </methods>
       </class> <!-- qa.test.processRun -->

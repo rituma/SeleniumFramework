@@ -1,47 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-29T17:55:47 IST" name="Default suite" finished-at="2025-10-29T17:55:54 IST" duration-ms="7274">
+  <suite started-at="2026-03-03T19:49:40 IST" name="GridSuite" finished-at="2026-03-03T19:50:03 IST" duration-ms="23007">
     <groups>
     </groups>
-    <test started-at="2025-10-29T17:55:47 IST" name="Default test" finished-at="2025-10-29T17:55:54 IST" duration-ms="7274">
+    <test started-at="2026-03-03T19:49:40 IST" name="ChromeTest" finished-at="2026-03-03T19:49:49 IST" duration-ms="8559">
       <class name="qa.test.processRun">
-        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:qa.test.processRun@fbd1f6]" started-at="2025-10-29T17:55:47 IST" name="beforeTestMethod" finished-at="2025-10-29T17:55:47 IST" duration-ms="65" status="PASS">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:qa.test.processRun@305b7c14]" started-at="2026-03-03T19:49:40 IST" name="beforeTestMethod" finished-at="2026-03-03T19:49:40 IST" duration-ms="75" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method is-config="true" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:qa.test.processRun@fbd1f6]" started-at="2025-10-29T17:55:47 IST" name="beforeMethodMethod" finished-at="2025-10-29T17:55:52 IST" duration-ms="5389" status="PASS">
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.reflect.Method,java.lang.String)[pri:0, instance:qa.test.processRun@305b7c14]" started-at="2026-03-03T19:49:41 IST" name="beforeMethodMethod" finished-at="2026-03-03T19:49:42 IST" duration-ms="1448" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.processRun.goToAmazon()]]>
+                <![CDATA[public void qa.test.processRun.goToAmazonWithChrome(java.lang.String) throws java.net.MalformedURLException,java.net.URISyntaxException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method signature="goToAmazon()[pri:0, instance:qa.test.processRun@fbd1f6]" started-at="2025-10-29T17:55:52 IST" name="goToAmazon" finished-at="2025-10-29T17:55:54 IST" duration-ms="1601" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToAmazon -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.processRun@fbd1f6]" started-at="2025-10-29T17:55:54 IST" name="afterMethod" finished-at="2025-10-29T17:55:54 IST" duration-ms="111" status="PASS">
+        <test-method signature="goToAmazonWithChrome(java.lang.String)[pri:0, instance:qa.test.processRun@305b7c14]" started-at="2026-03-03T19:49:42 IST" name="goToAmazonWithChrome" finished-at="2026-03-03T19:49:49 IST" duration-ms="6816" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=goToAmazon status=SUCCESS method=processRun.goToAmazon()[pri:0, instance:qa.test.processRun@fbd1f6] output={null}]]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToAmazonWithChrome -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.processRun@305b7c14]" started-at="2026-03-03T19:49:49 IST" name="afterMethod" finished-at="2026-03-03T19:49:49 IST" duration-ms="116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=goToAmazonWithChrome status=SUCCESS method=processRun.goToAmazonWithChrome(java.lang.String)[pri:0, instance:qa.test.processRun@305b7c14] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:qa.test.processRun@fbd1f6]" started-at="2025-10-29T17:55:54 IST" name="afterTestMethod" finished-at="2025-10-29T17:55:54 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:qa.test.processRun@305b7c14]" started-at="2026-03-03T19:49:49 IST" name="afterTestMethod" finished-at="2026-03-03T19:49:49 IST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
       </class> <!-- qa.test.processRun -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2026-03-03T19:49:40 IST" name="SafariTest" finished-at="2026-03-03T19:50:03 IST" duration-ms="23007">
+      <class name="qa.test.processRun">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:qa.test.processRun@2638011]" started-at="2026-03-03T19:49:40 IST" name="beforeTestMethod" finished-at="2026-03-03T19:49:40 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethod -->
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.reflect.Method,java.lang.String)[pri:0, instance:qa.test.processRun@2638011]" started-at="2026-03-03T19:49:41 IST" name="beforeMethodMethod" finished-at="2026-03-03T19:49:47 IST" duration-ms="6745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.test.processRun.goToAmazonWithSafari(java.lang.String) throws java.net.MalformedURLException,java.net.URISyntaxException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodMethod -->
+        <test-method signature="goToAmazonWithSafari(java.lang.String)[pri:0, instance:qa.test.processRun@2638011]" started-at="2026-03-03T19:49:47 IST" name="goToAmazonWithSafari" finished-at="2026-03-03T19:50:03 IST" duration-ms="15757" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToAmazonWithSafari -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.processRun@2638011]" started-at="2026-03-03T19:50:03 IST" name="afterMethod" finished-at="2026-03-03T19:50:03 IST" duration-ms="398" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=goToAmazonWithSafari status=SUCCESS method=processRun.goToAmazonWithSafari(java.lang.String)[pri:0, instance:qa.test.processRun@2638011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:qa.test.processRun@2638011]" started-at="2026-03-03T19:50:03 IST" name="afterTestMethod" finished-at="2026-03-03T19:50:03 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
+      </class> <!-- qa.test.processRun -->
+    </test> <!-- SafariTest -->
+  </suite> <!-- GridSuite -->
 </testng-results>

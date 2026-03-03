@@ -9,11 +9,11 @@ public class ElementFetch {
 	public WebElement getWebElement(String identifierType,String identifierValue) {
 		switch(identifierType) {
 		case "XPATH":
-			return baseTest.driver.findElement(By.xpath(identifierValue));
+			return baseTest.driver.get().findElement(By.xpath(identifierValue));
 		case "CSS":
-			return baseTest.driver.findElement(By.cssSelector(identifierValue));
+			return baseTest.driver.get().findElement(By.cssSelector(identifierValue));
 		case "class":
-			return baseTest.driver.findElement(By.className(identifierValue));
+			return baseTest.driver.get().findElement(By.className(identifierValue));
 		}
 		return null;
 	}
