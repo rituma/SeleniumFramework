@@ -5,12 +5,6 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
-            <version>5.7.1</version>
-            <scope>test</scope>
-        </dependency>
         <dependency><!--
             https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
             <groupId>org.seleniumhq.selenium</groupId>
@@ -21,6 +15,7 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.11.0</version>
+            <scope>test</scope>
         </dependency>
         <!-- Source: https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-jetty -->
 <dependency>
@@ -79,6 +74,14 @@
                    <suiteXmlFile>testng.xml</suiteXmlFile>
                 </suiteXmlFiles>
             </configuration>
+              <dependencies>
+        <!-- Force Surefire to use TestNG provider, not JUnit -->
+        <dependency>
+            <groupId>org.apache.maven.surefire</groupId>
+            <artifactId>surefire-testng</artifactId>
+            <version>3.0.0-M5</version>
+        </dependency>
+        </dependencies>
               </plugin>
         </plugins>
     </build>
