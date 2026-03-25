@@ -15,7 +15,6 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.11.0</version>
-            <scope>test</scope>
         </dependency>
         <!-- Source: https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-jetty -->
 <dependency>

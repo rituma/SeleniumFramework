@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [GridSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="SafariTest(failed)">
-    <parameter name="browser" value="safari"/>
+  <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="qa.test.processRun">
         <methods>
           <include name="beforeMethodMethod"/>
+          <include name="goToAmazonWithChrome" invocation-numbers="0"/>
           <include name="afterMethod"/>
           <include name="beforeTestMethod"/>
-          <include name="goToAmazonWithSafari"/>
           <include name="afterTestMethod"/>
         </methods>
       </class> <!-- qa.test.processRun -->
     </classes>
-  </test> <!-- SafariTest(failed) -->
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [GridSuite] -->

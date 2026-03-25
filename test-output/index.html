@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-GridSuite" class="navigator-link">
-              <span class="suite-name border-passed">GridSuite</span>
+              <span class="suite-name border-failed">GridSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-GridSuite" class="navigator-link ">
-                    <span>testng1.xml</span>
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-GridSuite" class="hide-methods failed suite-GridSuite"> (hide)</a> <!-- hide-methods failed suite-GridSuite -->
+                      <a href="#" panel-name="suite-GridSuite" class="show-methods failed suite-GridSuite"> (show)</a> <!-- show-methods failed suite-GridSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-GridSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GridSuite" title="qa.test.processRun" class="method navigator-link" hash-for-method="goToAmazonWithChrome(chrome)">goToAmazonWithChrome(chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-GridSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,11 +115,6 @@
                       <a href="#" panel-name="suite-GridSuite" class="show-methods passed suite-GridSuite"> (show)</a> <!-- show-methods passed suite-GridSuite -->
                     </span>
                     <div class="method-list-content passed suite-GridSuite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-GridSuite" title="qa.test.processRun" class="method navigator-link" hash-for-method="goToAmazonWithChrome(chrome)">goToAmazonWithChrome(chrome)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-GridSuite" title="qa.test.processRun" class="method navigator-link" hash-for-method="goToAmazonWithSafari(firefox)">goToAmazonWithSafari(firefox)</a> <!-- method navigator-link -->
@@ -123,9 +132,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-GridSuite" class="panel GridSuite">
-          <div class="suite-GridSuite-class-passed">
+          <div class="suite-GridSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">qa.test.processRun</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -135,8 +144,44 @@
                   </a> <!-- goToAmazonWithChrome(chrome) -->
                   <span class="method-name">goToAmazonWithChrome</span>
                   <span class="parameters">(chrome)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.155)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6.1&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [649a1767aa499349380a2ade82227f59, clickElement {id=f.95772A2CDBFCF409348B52A69D383A2C.d.488ED1981224D7A6D2FF78B7DD06FA3F.e.9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.155, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /var/folders/yw/dwnj_77s7kj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51644}, goog:processID: 11247, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51644/devtoo..., se:cdpVersion: 146.0.7680.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (649a1767aa499349380a2ade82227f59)] -&gt; xpath: //div[@id=&apos;nav-logo&apos;]]
+Session ID: 649a1767aa499349380a2ade82227f59
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pageEvents.FirstPage.randomFlowofAmazon(FirstPage.java:19)
+	at qa.test.processRun.goToAmazonWithChrome(processRun.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GridSuite-class-failed -->
+          <div class="suite-GridSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">qa.test.processRun</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="goToAmazonWithSafari(firefox)">
@@ -150,7 +195,7 @@
         </div> <!-- panel GridSuite -->
         <div panel-name="test-xml-GridSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/rmaurya/git/repository/SeleniumFramework/testng1.xml</span>
+            <span class="header-content">/Users/rmaurya/git/SeleniumFramework/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -221,16 +266,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'goToAmazonWithSafari')
 data.setCell(0, 2, 'qa.test.processRun')
-data.setCell(0, 3, 15757);
+data.setCell(0, 3, 5020);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'goToAmazonWithChrome')
 data.setCell(1, 2, 'qa.test.processRun')
-data.setCell(1, 3, 6816);
+data.setCell(1, 3, 2700);
 window.suiteTableData['GridSuite']= { tableData: data, tableDiv: 'times-div-GridSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-GridSuite">
               </div> <!-- times-div-GridSuite -->
             </div> <!-- times-div -->
@@ -276,35 +321,37 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodMethod(public void qa.test.processRun.goToAmazonWithChrome(java.lang.String) throws java.net.MalformedURLEx...)</span>
-                <span class="method-start">81 ms</span>
+                <span class="method-start">93 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodMethod(public void qa.test.processRun.goToAmazonWithSafari(java.lang.String) throws java.net.MalformedURLEx...)</span>
-                <span class="method-start">81 ms</span>
+                <span class="method-start">93 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">goToAmazonWithChrome(chrome)</span>
-                <span class="method-start">1529 ms</span>
+                <span class="method-name">goToAmazonWithSafari(firefox)</span>
+                <span class="method-start">1720 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">goToAmazonWithSafari(firefox)</span>
-                <span class="method-start">6826 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">goToAmazonWithChrome(chrome)</span>
+                <span class="method-start">2681 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=goToAmazonWithChrome status=SUCCESS method=processRun.goToAmazonWithChrome(java.lan...)</span>
-                <span class="method-start">8347 ms</span>
+                <span class="method-name">afterMethod([TestResult name=goToAmazonWithChrome status=FAILURE method=processRun.goToAmazonWithChrome(java.lan...)</span>
+                <span class="method-start">5384 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTestMethod</span>
-                <span class="method-start">8464 ms</span>
+                <span class="method-start">5500 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=goToAmazonWithSafari status=SUCCESS method=processRun.goToAmazonWithSafari(java.lan...)</span>
-                <span class="method-start">22584 ms</span>
+                <span class="method-start">6741 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTestMethod</span>
-                <span class="method-start">22983 ms</span>
+                <span class="method-start">7106 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

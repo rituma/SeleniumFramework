@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-03T19:49:40 IST" name="GridSuite" finished-at="2026-03-03T19:50:03 IST" duration-ms="23007">
+  <suite started-at="2026-03-25T10:19:27 IST" name="GridSuite" finished-at="2026-03-25T10:19:34 IST" duration-ms="7130">
     <groups>
     </groups>
-    <test started-at="2026-03-03T19:49:40 IST" name="ChromeTest" finished-at="2026-03-03T19:49:49 IST" duration-ms="8559">
+    <test started-at="2026-03-25T10:19:27 IST" name="ChromeTest" finished-at="2026-03-25T10:19:33 IST" duration-ms="5602">
       <class name="qa.test.processRun">
-        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:qa.test.processRun@305b7c14]" started-at="2026-03-03T19:49:40 IST" name="beforeTestMethod" finished-at="2026-03-03T19:49:40 IST" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:qa.test.processRun@3d34d211]" started-at="2026-03-25T10:19:27 IST" name="beforeTestMethod" finished-at="2026-03-25T10:19:27 IST" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method is-config="true" signature="beforeMethodMethod(java.lang.reflect.Method,java.lang.String)[pri:0, instance:qa.test.processRun@305b7c14]" started-at="2026-03-03T19:49:41 IST" name="beforeMethodMethod" finished-at="2026-03-03T19:49:42 IST" duration-ms="1448" status="PASS">
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.reflect.Method,java.lang.String)[pri:0, instance:qa.test.processRun@3d34d211]" started-at="2026-03-25T10:19:27 IST" name="beforeMethodMethod" finished-at="2026-03-25T10:19:30 IST" duration-ms="2587" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method signature="goToAmazonWithChrome(java.lang.String)[pri:0, instance:qa.test.processRun@305b7c14]" started-at="2026-03-03T19:49:42 IST" name="goToAmazonWithChrome" finished-at="2026-03-03T19:49:49 IST" duration-ms="6816" status="PASS">
+        <test-method signature="goToAmazonWithChrome(java.lang.String)[pri:0, instance:qa.test.processRun@3d34d211]" started-at="2026-03-25T10:19:30 IST" name="goToAmazonWithChrome" finished-at="2026-03-25T10:19:33 IST" duration-ms="2700" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -35,33 +35,94 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.155)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [649a1767aa499349380a2ade82227f59, clickElement {id=f.95772A2CDBFCF409348B52A69D383A2C.d.488ED1981224D7A6D2FF78B7DD06FA3F.e.9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.155, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /var/folders/yw/dwnj_77s7kj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51644}, goog:processID: 11247, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51644/devtoo..., se:cdpVersion: 146.0.7680.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (649a1767aa499349380a2ade82227f59)] -> xpath: //div[@id='nav-logo']]
+Session ID: 649a1767aa499349380a2ade82227f59]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.155)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [649a1767aa499349380a2ade82227f59, clickElement {id=f.95772A2CDBFCF409348B52A69D383A2C.d.488ED1981224D7A6D2FF78B7DD06FA3F.e.9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.155, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /var/folders/yw/dwnj_77s7kj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51644}, goog:processID: 11247, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51644/devtoo..., se:cdpVersion: 146.0.7680.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (649a1767aa499349380a2ade82227f59)] -> xpath: //div[@id='nav-logo']]
+Session ID: 649a1767aa499349380a2ade82227f59
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pageEvents.FirstPage.randomFlowofAmazon(FirstPage.java:19)
+at qa.test.processRun.goToAmazonWithChrome(processRun.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToAmazonWithChrome -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.processRun@305b7c14]" started-at="2026-03-03T19:49:49 IST" name="afterMethod" finished-at="2026-03-03T19:49:49 IST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.processRun@3d34d211]" started-at="2026-03-25T10:19:33 IST" name="afterMethod" finished-at="2026-03-25T10:19:33 IST" duration-ms="115" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=goToAmazonWithChrome status=SUCCESS method=processRun.goToAmazonWithChrome(java.lang.String)[pri:0, instance:qa.test.processRun@305b7c14] output={null}]]]>
+                <![CDATA[[TestResult name=goToAmazonWithChrome status=FAILURE method=processRun.goToAmazonWithChrome(java.lang.String)[pri:0, instance:qa.test.processRun@3d34d211] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:qa.test.processRun@305b7c14]" started-at="2026-03-03T19:49:49 IST" name="afterTestMethod" finished-at="2026-03-03T19:49:49 IST" duration-ms="92" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:qa.test.processRun@3d34d211]" started-at="2026-03-25T10:19:33 IST" name="afterTestMethod" finished-at="2026-03-25T10:19:33 IST" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
       </class> <!-- qa.test.processRun -->
     </test> <!-- ChromeTest -->
-    <test started-at="2026-03-03T19:49:40 IST" name="SafariTest" finished-at="2026-03-03T19:50:03 IST" duration-ms="23007">
+    <test started-at="2026-03-25T10:19:27 IST" name="SafariTest" finished-at="2026-03-25T10:19:34 IST" duration-ms="7130">
       <class name="qa.test.processRun">
-        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:qa.test.processRun@2638011]" started-at="2026-03-03T19:49:40 IST" name="beforeTestMethod" finished-at="2026-03-03T19:49:40 IST" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:qa.test.processRun@7b02881e]" started-at="2026-03-25T10:19:27 IST" name="beforeTestMethod" finished-at="2026-03-25T10:19:27 IST" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method is-config="true" signature="beforeMethodMethod(java.lang.reflect.Method,java.lang.String)[pri:0, instance:qa.test.processRun@2638011]" started-at="2026-03-03T19:49:41 IST" name="beforeMethodMethod" finished-at="2026-03-03T19:49:47 IST" duration-ms="6745" status="PASS">
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.reflect.Method,java.lang.String)[pri:0, instance:qa.test.processRun@7b02881e]" started-at="2026-03-25T10:19:27 IST" name="beforeMethodMethod" finished-at="2026-03-25T10:19:29 IST" duration-ms="1627" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,7 +138,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method signature="goToAmazonWithSafari(java.lang.String)[pri:0, instance:qa.test.processRun@2638011]" started-at="2026-03-03T19:49:47 IST" name="goToAmazonWithSafari" finished-at="2026-03-03T19:50:03 IST" duration-ms="15757" status="PASS">
+        <test-method signature="goToAmazonWithSafari(java.lang.String)[pri:0, instance:qa.test.processRun@7b02881e]" started-at="2026-03-25T10:19:29 IST" name="goToAmazonWithSafari" finished-at="2026-03-25T10:19:34 IST" duration-ms="5020" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,18 +149,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToAmazonWithSafari -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.processRun@2638011]" started-at="2026-03-03T19:50:03 IST" name="afterMethod" finished-at="2026-03-03T19:50:03 IST" duration-ms="398" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.processRun@7b02881e]" started-at="2026-03-25T10:19:34 IST" name="afterMethod" finished-at="2026-03-25T10:19:34 IST" duration-ms="365" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=goToAmazonWithSafari status=SUCCESS method=processRun.goToAmazonWithSafari(java.lang.String)[pri:0, instance:qa.test.processRun@2638011] output={null}]]]>
+                <![CDATA[[TestResult name=goToAmazonWithSafari status=SUCCESS method=processRun.goToAmazonWithSafari(java.lang.String)[pri:0, instance:qa.test.processRun@7b02881e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:qa.test.processRun@2638011]" started-at="2026-03-03T19:50:03 IST" name="afterTestMethod" finished-at="2026-03-03T19:50:03 IST" duration-ms="21" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:qa.test.processRun@7b02881e]" started-at="2026-03-25T10:19:34 IST" name="afterTestMethod" finished-at="2026-03-25T10:19:34 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
